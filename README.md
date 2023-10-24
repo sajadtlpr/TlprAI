@@ -1,11 +1,16 @@
 
 # TlprAI - AI Cybersecurity Chatbot
 ```text
-     _   _            _    ____        _   
-    | | | | __ _  ___| | _| __ )  ___ | |_ 
-    | |_| |/ _` |/ __| |/ /  _ \ / _ \| __| By: Morpheuslord
-    |  _  | (_| | (__|   <| |_) | (_) | |_  AI used: Meta-LLama2
-    |_| |_|\__,_|\___|_|\_\____/ \___/ \__|
+
+  _______ _                   _____  
+ |__   __| |            /\   |_   _| 
+    | |  | |_ __  _ __ /  \    | |   
+    | |  | | '_ \| '__/ /\ \   | |   
+    | |  | | |_) | | / ____ \ _| |_  
+    |_|  |_| .__/|_|/_/    \_\_____| 
+           | |                       
+           |_|                       
+
 ```
 
 ## Introduction
@@ -23,16 +28,6 @@ TlprAI utilizes the powerful language model Meta-LLama2 through the "LlamaCpp" l
 - **Clear Output:** TlprAI presents its responses in a well-formatted markdown, providing easily readable and organized answers.
 - **Static Code Analysis:** Utilizes the provided scan data or log file for conducting static code analysis. It thoroughly examines the source code without executing it, identifying potential vulnerabilities, coding errors, and security issues.
 - **Vulnerability Analysis:** Performs a comprehensive vulnerability analysis using the provided scan data or log file. It identifies and assesses security weaknesses, misconfigurations, and potential exploits present in the target system or network.
-
-## How it looks
-### Using Llama
-Using LLama2 is one of the best offline and free options out there. It is currently under improvement I am working on a prompt that will better incorporate cybersecurity perspective into the AI.
-I have to thank **@thisserand** and his [llama2_local](https://github.com/thisserand/llama2_local) repo and also his YT video [YT_Video](https://youtu.be/WzCS8z9GqHw). They were great resources. To be frank the llama2 code is 95% his, I just yanked the code and added a Flask API functionality to it.
-
-The Accuracy of the AI offline and outside the codes test was great and had equal accuracy to openai or bard but while in code it was facing a few issues may be because of the prompting and all. I will try and fix it.
-The speed depends on your system and the GPU and CPU configs you have. currently, it is using the `TheBloke/Llama-2-7B-Chat-GGML` model and can be changed via the `portscanner` and `dnsrecon` files.
-
-For now, the llama code and scans are handled differently. After a few tests, I found out llama needs to be trained a little to operate like how I intended it to work so it needs some time. Any suggestions on how I can do that can be added to the discussions of this repo [Discussions Link](https://github.com/morpheuslord/GPT_Vuln-analyzer/discussions). For now, the output won't be a divided list of all the data instead will be an explanation of the vulnerability or issues discovered by the AI.
 
 The prompt for the model usage looks like this:
 ```prompt
@@ -62,7 +57,7 @@ The instructions looks like this:
         "open ports and services":
         - List open ports
         - List open ports services
-        "vulnerable service":
+        "vulnerable services
         - Based on CVEs or nature of the ports opened list the vulnerable services
         "found cve":
         - List the CVE's found and list the main issues.
@@ -70,15 +65,14 @@ The instructions looks like this:
 
 Using the instruction set and the data provided via the prompt the llama AI generates its output.
 
-For the most usage I suggest you create an runpod serverless endpoit deployment of llama you can refer this tutorial for that [tutorial](https://www.youtube.com/watch?v=Ftb4vbGUr7U). Follow the tutorial for better use.
 ### Chat:
-![TlprAI_chat](https://github.com/morpheuslord/TlprAI/assets/70637311/01a95209-6037-45c6-aadc-30919abccf7e)
+![TlprAI_chat](https://github.com/sajadtlpr/TlprAI/assets/70637311/01a95209-6037-45c6-aadc-30919abccf7e)
 
 ### Static Code analysis:
-![code_analysis](https://github.com/morpheuslord/TlprAI/assets/70637311/52ef1b07-4cf0-464e-91ac-9e3b7d015cb2)
+![code_analysis](https://github.com/sajadtlpr/TlprAI/assets/70637311/52ef1b07-4cf0-464e-91ac-9e3b7d015cb2)
 
 ### Vulnerability analysis:
-![vuln_analysis](https://github.com/morpheuslord/TlprAI/assets/70637311/6683b226-425e-4862-b254-f155f8f7b57d)
+![vuln_analysis](https://github.com/sajadtlpr/TlprAI/assets/70637311/6683b226-425e-4862-b254-f155f8f7b57d)
 
 ## Installation
 
@@ -94,7 +88,7 @@ Before you proceed with the installation, ensure you have the following prerequi
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/morpheuslord/TlprAI.git
+git clone https://github.com/sajadtlpr/TlprAI.git
 cd TlprAI
 ```
 
@@ -181,6 +175,6 @@ The Github version of the dataset is for the OpenAI training and the other is fo
 
 For any questions, feedback, or inquiries related to TlprAI, feel free to contact the project maintainer:
 
-- Email: morpheuslord@protonmail.com
-- Twitter: [@morpheuslord2](https://twitter.com/morpheuslord2)
-- LinkedIn: [ChiranjeeviG](https://www.linkedin.com/in/chiranjeevi-g-naidu/)
+- Email: abdullasajad01@gmail.com
+- Twitter: [@msajadtlpr](https://twitter.com/sajadtlpr)
+- LinkedIn: [ChiranjeeviG](https://www.linkedin.com/in/Abdulla sajad/)
