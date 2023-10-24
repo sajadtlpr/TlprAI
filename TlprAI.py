@@ -214,13 +214,16 @@ def static_analysis(language_used, file_path, ai_option) -> Panel:
 
 def main() -> None:
     clearscr()
-    banner = """
-     _   _            _    ____        _   
-    | | | | __ _  ___| | _| __ )  ___ | |_ 
-    | |_| |/ _` |/ __| |/ /  _ \ / _ \| __| By: Sajadtlpr 
-    |  _  | (_| | (__|   <| |_) | (_) | |_  AI used: Meta-LLama2
-    |_| |_|\__,_|\___|_|\_\____/ \___/ \__|
-    """
+    banner = """  
+  _______ _                   _____  
+ |__   __| |            /\   |_   _| 
+    | |  | |_ __  _ __ /  \    | |   By:Sajadtlpr
+    | |  | | '_ \| '__/ /\ \   | |   Used:meta Llama
+    | |  | | |_) | | / ____ \ _| |_  
+    |_|  |_| .__/|_|/_/    \_\_____| 
+           | |                       
+           |_|                       
+     """
     contact_dev = """
     Email = abdullasajad01@gmail.com
     Twitter = https://twitter.com/sajadtlpr 
